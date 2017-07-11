@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmps115.trades.SellPage">
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="8dp"
+        android:layout_marginRight="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Sell Page"
+        android:textAlignment="center"
+
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp" />
+
+    <EditText
+        android:id="@+id/Skill_Text"
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:ems="10"
+        android:hint="Skill Name"
+        android:inputType="textPersonName"
+
+        android:layout_below="@+id/textView4"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_centerHorizontal="true"/>
+
+    <EditText
+        android:id="@+id/Desc_Text"
+        android:layout_width="368dp"
+        android:layout_height="302dp"
+        android:ems="10"
+        android:hint="Description here...\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n"
+        android:inputType="textMultiLine"
+        android:singleLine="false"
+        android:textAllCaps="false"
+
+        android:layout_marginTop="22dp"
+        android:layout_below="@+id/Skill_Text"
+        android:layout_alignLeft="@+id/Skill_Text"
+        android:layout_alignStart="@+id/Skill_Text"
+        android:layout_centerHorizontal="true"/>
+
+    <Button
+        android:id="@+id/Submit_Button"
+        android:layout_width="368dp"
+        android:layout_height="100dp"
+        android:text="Submit"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@+id/Desc_Text"
+        android:layout_marginTop="10dp"
+ />
+
+</RelativeLayout>

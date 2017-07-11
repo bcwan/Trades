@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.cmps115.trades.Login"
+    android:weightSum="1">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/signin"
+            android:layout_width="300dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center"
+            android:layout_marginBottom="172dp"
+            android:gravity="center"
+            android:onClick="onClick">
+
+        </com.google.android.gms.common.SignInButton>
+
+        <ImageView
+            android:id="@+id/imageView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/signin"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginBottom="90dp"
+            app:srcCompat="@drawable/signin" />
+
+        <ImageView
+            android:id="@+id/imageView7"
+            android:layout_width="50dp"
+            android:layout_height="70dp"
+            android:layout_above="@+id/signin"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="28dp"
+            app:srcCompat="@drawable/arrow" />
+
+    </RelativeLayout>
+
+</LinearLayout>

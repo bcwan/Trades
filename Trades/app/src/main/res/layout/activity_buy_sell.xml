@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmps115.trades.BuySell"
+    tools:layout_editor_absoluteY="81dp"
+    tools:layout_editor_absoluteX="0dp">
+
+    <Button
+        android:id="@+id/myprofilebutton"
+        android:layout_width="509dp"
+        android:layout_height="150dp"
+        android:text="My Profile"
+
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/buybutton"
+        android:layout_alignStart="@+id/buybutton"
+        android:layout_marginTop="20dp" />
+
+
+    <Button
+        android:id="@+id/buybutton"
+        android:layout_width="509dp"
+        android:layout_height="150dp"
+        android:text="Buy"
+
+        android:layout_below = "@+id/myprofilebutton"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:layout_alignLeft="@+id/sellbutton"
+        android:layout_alignStart="@+id/sellbutton"
+        android:layout_marginTop="20dp"/>
+
+    <Button
+        android:id="@+id/sellbutton"
+        android:layout_width="509dp"
+        android:layout_height="150dp"
+        android:text="Sell"
+        android:layout_below="@+id/buybutton"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+ />
+
+
+</RelativeLayout>

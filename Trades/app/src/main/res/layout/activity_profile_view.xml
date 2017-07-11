@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmps115.trades.ProfileView">
+
+    <ImageView
+        android:id="@+id/imageView1"
+        android:layout_width="102dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="43dp"
+        android:src = "@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <EditText
+        android:id="@+id/editText"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="First"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="51dp"
+        android:layout_below="@+id/imageView1"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:id="@+id/editText5"
+        android:layout_width="120dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="Last"
+        android:layout_alignBaseline="@+id/editText"
+        android:layout_alignBottom="@+id/editText"
+        android:layout_toRightOf="@+id/editText"
+        android:layout_toEndOf="@+id/editText"
+        android:layout_marginLeft="35dp"
+        android:layout_marginStart="35dp" />
+
+    <EditText
+        android:id="@+id/editText7"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:ems="10"
+        android:inputType="textEmailAddress"
+        android:hint="Email"
+        android:layout_below="@+id/editText"
+        android:layout_alignLeft="@+id/editText"
+        android:layout_alignStart="@+id/editText" />
+
+    <EditText
+        android:id="@+id/editText8"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editText7"
+        android:layout_alignStart="@+id/editText7"
+        android:layout_below="@+id/editText7"
+        android:layout_marginTop="49dp"
+        android:ems="10"
+        android:inputType="phone"
+        android:hint="Phone #" />
+
+</RelativeLayout>

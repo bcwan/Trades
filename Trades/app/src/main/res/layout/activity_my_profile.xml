@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.cmps115.trades.MyProfile">
+
+    <ImageView
+        android:id="@+id/profileimage"
+        android:layout_width="102dp"
+        android:layout_height="95dp"
+        android:layout_marginTop="43dp"
+        android:src = "@mipmap/ic_launcher"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+    <TextView
+        android:id="@+id/first"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:textSize="32sp"
+        android:layout_marginLeft="64dp"
+        android:layout_marginStart="64dp"
+        android:layout_marginTop="70dp"
+        android:layout_below="@+id/profileimage"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <TextView
+        android:id="@+id/email"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="100dp"
+        android:ems="10"
+        android:textSize="28sp"
+        android:layout_below="@+id/first"
+        android:layout_alignLeft="@+id/first"
+        android:layout_alignStart="@+id/first" />
+
+    <TextView
+        android:id="@+id/phonenumber"
+        android:layout_width="277dp"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/email"
+        android:layout_alignStart="@+id/email"
+        android:layout_below="@+id/email"
+        android:layout_marginTop="70dp"
+        android:ems="10"
+        android:textSize="28sp" />
+
+    <!--
+    <Button
+        android:id="@+id/editprofile"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="15dp"
+        android:text="Edit Profile"
+        android:layout_below="@+id/phonenumber"
+        android:layout_marginTop="40dp"
+        />
+    -->
+
+</RelativeLayout>
